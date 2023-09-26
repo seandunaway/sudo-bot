@@ -6,12 +6,17 @@ general purpose discord bot that executes commands and returns its output
 ### install
 
 `npm install`
-`pm2 --name sudo start ./index.mjs`
+
+`pm2 --name sudo-bot start ./index.mjs`
+
+`pm2 save`
 
 
 ### uninstall
 
-`pm2 delete sudo`
+`pm2 delete sudo-bot`
+
+`pm2 save`
 
 
 ### invite
