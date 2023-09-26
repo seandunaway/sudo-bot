@@ -48,10 +48,13 @@ discord.on('interactionCreate', async function (interaction) {
     let args = interaction.options.getString('arguments')
     if (!commands[cmd]) return
 
+    await interaction.deferReply()
+
     let child
     try {
         child = spawn(commands[cmd], args?.split(' '))
     } catch (error) {
+        await interaction.editReply(error.message);
         console.error(error)
         return
     }
@@ -66,5 +69,5 @@ discord.on('interactionCreate', async function (interaction) {
     reply += '`'
     if (stdout !== '') reply += '\n```' + stdout + '```'
 
-    await interaction.reply(reply)
+    await interaction.editReply(reply)
 })
