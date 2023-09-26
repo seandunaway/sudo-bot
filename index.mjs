@@ -44,6 +44,8 @@ discord.on('ready', function (client) {
 
 discord.on('interactionCreate', async function (interaction) {
     if (!interaction.isChatInputCommand()) return
+    if (interaction.commandName !== 'sudo') return
+
     let cmd = interaction.options.getString('command')
     let args = interaction.options.getString('arguments')
     if (!commands[cmd]) return
