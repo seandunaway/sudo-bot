@@ -5,18 +5,7 @@ general purpose discord bot that executes commands and returns its output
 
 ### install
 
-`npm install`
-
-`pm2 --name sudo-bot start ./index.mjs`
-
-`pm2 save`
-
-
-### uninstall
-
-`pm2 delete sudo-bot`
-
-`pm2 save`
+`$ npm install`
 
 
 ### invite
@@ -51,6 +40,6 @@ general purpose discord bot that executes commands and returns its output
 
 ### more..
 
-add more by linking executables into the commands folder
+add more by linking executables into the commands folder and restart
 
 `$ cd commands && ln -s /usr/bin/echo echo`
