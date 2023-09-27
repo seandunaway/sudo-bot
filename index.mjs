@@ -1,23 +1,18 @@
 #!/usr/bin/env node
 
 import {spawn} from 'node:child_process'
+import {readdirSync} from 'node:fs'
 import {Client, REST, SlashCommandBuilder} from 'discord.js'
 
 let appid = '1156246056019968020'
 let token = 'MTE1NjI0NjA1NjAxOTk2ODAyMA.GdLQEj._d' + '_3MSknHdJSmqMhhcvYjUjj29A9t_FYYf0xXQ'
 
-let commands = {
-    banner: '/usr/bin/toilet',
-    coinflip: '/root/scripts/coinflip.mjs',
-    cowsay: '/usr/games/cowsay',
-    date: '/usr/bin/date',
-    echo: '/usr/bin/echo',
-    factor: '/usr/bin/factor',
-    fortune: '/usr/games/fortune',
-    magic8ball: '/root/scripts/magic8ball.mjs',
-    outfield: '/root/outfield/index.mjs',
-    pi: '/usr/bin/pi',
-    uptime: '/usr/bin/uptime',
+let commands = []
+let commands_filenames = readdirSync('./commands/', {encoding: 'utf8', recursive: true})
+for (let command_filename of commands_filenames) {
+    let match = command_filename.match(/^(?<command>.+?)(?:\.js|\.mjs|\.py|\.sh|\.exe)*$/)
+    if (!match?.groups?.command) continue
+    commands[`${match.groups.command}`] = `./commands/${match.input}`
 }
 
 let slashcommand = new SlashCommandBuilder()
@@ -57,7 +52,7 @@ discord.on('interactionCreate', async function (interaction) {
 
     let cmd = interaction.options.getString('command')
     let args = interaction.options.getString('arguments')
-    if (!commands[cmd]) return
+    if (!cmd || !commands[cmd]) return
 
     await interaction.deferReply()
 

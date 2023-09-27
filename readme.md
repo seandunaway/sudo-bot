@@ -47,3 +47,10 @@ general purpose discord bot that executes commands and returns its output
 `/sudo pi 100`
 
 `/sudo uptime`
+
+
+### more..
+
+add more by linking executables into the commands folder
+
+`$ cd commands && ln -s /usr/bin/echo echo`
