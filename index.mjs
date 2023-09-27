@@ -54,7 +54,7 @@ discord.on('interactionCreate', async function (interaction) {
 
     let child
     try {
-        child = spawn(commands[cmd], args?.split(' '))
+        child = spawn(commands[cmd], args?.split(' '), {timeout: 30_000})
     } catch (error) {
         await interaction.editReply(error.message);
         console.error(error)
