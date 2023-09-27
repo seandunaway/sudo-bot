@@ -8,13 +8,14 @@ let token = 'MTE1NjI0NjA1NjAxOTk2ODAyMA.GdLQEj._d' + '_3MSknHdJSmqMhhcvYjUjj29A9
 
 let commands = {
     banner: '/usr/bin/toilet',
-    echo: '/usr/bin/echo',
-    date: '/usr/bin/date',
-    fortune: '/usr/games/fortune',
     cowsay: '/usr/games/cowsay',
+    date: '/usr/bin/date',
+    echo: '/usr/bin/echo',
+    factor: '/usr/bin/factor',
+    fortune: '/usr/games/fortune',
     outfield: '/root/outfield/index.mjs',
+    pi: '/usr/bin/pi',
     uptime: '/usr/bin/uptime',
-
 }
 
 let slashcommand = new SlashCommandBuilder()

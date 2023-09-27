@@ -28,14 +28,18 @@ general purpose discord bot that executes commands and returns its output
 
 `/sudo banner hello world`
 
-`/sudo echo hello world`
+`/sudo cowsay hello world`
 
 `/sudo date`
 
+`/sudo echo hello world`
+
+`/sudo factor 42`
+
 `/sudo fortune`
 
-`/sudo cowsay hello world`
-
 `/sudo outfield -s spy -p 0.10`
+
+`/sudo pi 100`
 
 `/sudo uptime`
