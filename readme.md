@@ -28,6 +28,8 @@ general purpose discord bot that executes commands and returns its output
 
 `/sudo banner hello world`
 
+`/sudo coinflip`
+
 `/sudo cowsay hello world`
 
 `/sudo date`

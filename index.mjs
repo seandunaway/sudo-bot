@@ -8,6 +8,7 @@ let token = 'MTE1NjI0NjA1NjAxOTk2ODAyMA.GdLQEj._d' + '_3MSknHdJSmqMhhcvYjUjj29A9
 
 let commands = {
     banner: '/usr/bin/toilet',
+    coinflip: '/root/scripts/coinflip.mjs',
     cowsay: '/usr/games/cowsay',
     date: '/usr/bin/date',
     echo: '/usr/bin/echo',
