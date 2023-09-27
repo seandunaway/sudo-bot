@@ -26,10 +26,14 @@ general purpose discord bot that executes commands and returns its output
 
 ### commands
 
-`/echo hello world`
+`/sudo echo hello world`
 
-`/fortune`
+`/sudo date`
 
-`/cowsay hello world`
+`/sudo fortune`
 
-`/outfield -s spy -p 0.10`
+`/sudo cowsay hello world`
+
+`/sudo outfield -s spy -p 0.10`
+
+`/sudo uptime`
