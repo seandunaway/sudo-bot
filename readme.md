@@ -40,6 +40,8 @@ general purpose discord bot that executes commands and returns its output
 
 `/sudo fortune`
 
+`/sudo magic8ball`
+
 `/sudo outfield -s spy -p 0.10`
 
 `/sudo pi 100`

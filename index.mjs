@@ -14,6 +14,7 @@ let commands = {
     echo: '/usr/bin/echo',
     factor: '/usr/bin/factor',
     fortune: '/usr/games/fortune',
+    magic8ball: '/root/scripts/magic8ball.mjs',
     outfield: '/root/outfield/index.mjs',
     pi: '/usr/bin/pi',
     uptime: '/usr/bin/uptime',
