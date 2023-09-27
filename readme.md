@@ -28,4 +28,8 @@ general purpose discord bot that executes commands and returns its output
 
 `/echo hello world`
 
-`/outfield 0.10`
+`/fortune`
+
+`/cowsay hello world`
+
+`/outfield -s spy -p 0.10`

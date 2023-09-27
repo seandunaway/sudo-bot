@@ -8,6 +8,8 @@ let token = 'MTE1NjI0NjA1NjAxOTk2ODAyMA.GdLQEj._d' + '_3MSknHdJSmqMhhcvYjUjj29A9
 
 let commands = {
     echo: '/usr/bin/echo',
+    fortune: '/usr/games/fortune',
+    cowsay: '/usr/games/cowsay',
     outfield: '/root/outfield/index.mjs',
 }
 
