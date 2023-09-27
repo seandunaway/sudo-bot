@@ -72,7 +72,7 @@ discord.on('interactionCreate', async function (interaction) {
     reply += `$ ${cmd}`
     if (args !== null) reply += ` ${args}`
     reply += '`'
-    if (stdout !== '' && stdout !== '\n') reply += '\n```' + stdout + '```'
+    if (stdout !== '' && stdout !== '\n') reply += '\n```\n' + stdout + '```'
 
     interaction.editReply(reply)
     console.info(reply)
