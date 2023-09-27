@@ -66,7 +66,6 @@ discord.on('interactionCreate', async function (interaction) {
     }
 
     let stdout = ''
-    for await (let chunk of child.stderr) stdout += chunk
     for await (let chunk of child.stdout) stdout += chunk
 
     let reply = '`'
