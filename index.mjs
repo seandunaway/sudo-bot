@@ -56,7 +56,7 @@ discord.on('interactionCreate', async function (interaction) {
 
     let child
     try {
-        child = spawn(commands[cmd], args?.split(' '), {timeout: 30_000})
+        child = spawn(commands[cmd], args?.split(' '), {timeout: 10_000})
     } catch (error) {
         await interaction.editReply(error.message);
         console.error(error)
@@ -71,7 +71,7 @@ discord.on('interactionCreate', async function (interaction) {
     reply += `$ ${cmd}`
     if (args !== null) reply += ` ${args}`
     reply += '`'
-    if (stdout !== '\n') reply += '\n```' + stdout + '```'
+    if (stdout !== '' && stdout !== '\n') reply += '\n```' + stdout + '```'
 
     await interaction.editReply(reply)
 })
