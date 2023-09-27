@@ -42,4 +42,6 @@ general purpose discord bot that executes commands and returns its output
 
 add more by linking executables into the commands folder and restart
 
-`$ cd commands && ln -s /usr/bin/echo echo`
+`$ cd commands && ln -s /usr/bin/rm rm`
+
+:)
