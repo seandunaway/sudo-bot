@@ -7,6 +7,7 @@ let appid = '1156246056019968020'
 let token = 'MTE1NjI0NjA1NjAxOTk2ODAyMA.GdLQEj._d' + '_3MSknHdJSmqMhhcvYjUjj29A9t_FYYf0xXQ'
 
 let commands = {
+    banner: '/usr/bin/toilet',
     echo: '/usr/bin/echo',
     date: '/usr/bin/date',
     fortune: '/usr/games/fortune',

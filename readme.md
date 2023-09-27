@@ -26,6 +26,8 @@ general purpose discord bot that executes commands and returns its output
 
 ### commands
 
+`/sudo banner hello world`
+
 `/sudo echo hello world`
 
 `/sudo date`
