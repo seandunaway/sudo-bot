@@ -74,5 +74,6 @@ discord.on('interactionCreate', async function (interaction) {
     reply += '`'
     if (stdout !== '' && stdout !== '\n') reply += '\n```' + stdout + '```'
 
-    await interaction.editReply(reply)
+    interaction.editReply(reply)
+    console.info(reply)
 })
