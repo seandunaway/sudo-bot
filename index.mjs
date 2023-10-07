@@ -42,7 +42,7 @@ let discord = new Client({intents: 1})
 discord.login(token)
 
 discord.on('ready', function (client) {
-    // client.user.setPresence({activities: [{type: 3, name: '/sudo'}]})
+    client.user.setPresence({activities: [{type: 3, name: '/sudo'}]})
     console.info(new Date (), client.user.tag, 'ready!')
 })
 
