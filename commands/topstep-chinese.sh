@@ -1,8 +1,6 @@
 #!/bin/sh
 
-n="${1:-10}"
-
-command="tail -n $n ~/www/topstep-chinese.txt"
+command="tail -n ${1:-10} ~/www/topstep-chinese.txt"
 
 if [ -n "$2" ]
 then
